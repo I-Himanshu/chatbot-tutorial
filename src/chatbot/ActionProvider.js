@@ -11,7 +11,7 @@ class ActionProvider {
   };
 
   handleJavascriptQuiz = () => {
-    const userMessage = createClientMessage("I want to explore Javascript!");
+    const userMessage = this.createClientMessage("I want to explore Javascript!");
     this.addMessageToState(userMessage);
     const message = this.createChatBotMessage(
       "Fantastic. Here is your quiz. Good luck!",
